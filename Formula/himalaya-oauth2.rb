@@ -5,6 +5,12 @@ class HimalayaOauth2 < Formula
   sha256 "3d04afdf6f753219c2203feb8094a2ec82c77bab7f9acbe1811773e2a4562877"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/ziyong-was-taken/homebrew-tap/releases/download/himalaya-oauth2-1.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2a874814627d55fa0265246df4b706efaeeabb1c75d033c3768ce78eadfc912d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b456060307097f028ddb68f96f32d327f5b51ea1b1cc042ca9c09ce3ca41c535"
+  end
+
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
 
