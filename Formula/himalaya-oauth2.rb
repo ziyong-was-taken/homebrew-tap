@@ -14,11 +14,11 @@ class HimalayaOauth2 < Formula
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
 
-  conflicts_with "himalaya", because: "both install `himalaya` binaries"
-
   on_linux do
     depends_on "openssl@3"
   end
+
+  conflicts_with "himalaya", because: "both install `himalaya` binaries"
 
   def install
     features = ["oauth2"]
