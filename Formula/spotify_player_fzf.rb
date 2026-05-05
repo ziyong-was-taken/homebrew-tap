@@ -16,7 +16,7 @@ class SpotifyPlayerFzf < Formula
   depends_on "rust" => :build
 
   on_linux do
-    depends_on "alsa-lib"
+    depends_on "alsa-lib" => :build
     depends_on "dbus"
     depends_on "openssl@3"
   end
