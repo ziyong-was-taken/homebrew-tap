@@ -23,6 +23,8 @@ jobs:
 
       - name: Set up git
         uses: Homebrew/actions/git-user-config@main
+        with:
+          username: github-actions[bot]
 
       - name: Pull bottles
         env:
@@ -33,6 +35,7 @@ jobs:
       - name: Push commits
         uses: Homebrew/actions/git-try-push@main
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
 
       - name: Delete branch
