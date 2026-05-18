@@ -6,6 +6,7 @@ class Tdf < Formula
   license "AGPL-3.0-only"
 
   depends_on "fontconfig" => :build
+  depends_on "pkgconf" => :build
   depends_on "rust" => :build
 
   def install
