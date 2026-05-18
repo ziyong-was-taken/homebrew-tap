@@ -9,6 +9,7 @@ class Tdf < Formula
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "fontconfig"
+  depends_on "freetype"
 
   def install
     system "cargo", "install", *std_cargo_args
