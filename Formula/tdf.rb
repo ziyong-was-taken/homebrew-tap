@@ -16,8 +16,8 @@ class Tdf < Formula
   end
 
   test do
-    expected_output = ""
-    output = shell_output("#{bin}/tdf #{test_fixtures("test.pdf")}")
-    assert_equal expected_output, output
+    assert_match version.to_s, shell_output("#{bin}/tdf --version")
+
+    system bin/"for_profiling", test_fixtures("test.pdf")
   end
 end
