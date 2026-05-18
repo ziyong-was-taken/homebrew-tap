@@ -5,6 +5,7 @@ class Tdf < Formula
   sha256 "f9cdcc89e03efdb002938428905ff6cd9ef7ee9941f7b4fa1f473f9f6c49eb6e"
   license "AGPL-3.0-only"
 
+  depends_on "llvm" => :build
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "fontconfig"
