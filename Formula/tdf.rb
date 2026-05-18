@@ -5,6 +5,12 @@ class Tdf < Formula
   sha256 "f9cdcc89e03efdb002938428905ff6cd9ef7ee9941f7b4fa1f473f9f6c49eb6e"
   license "AGPL-3.0-only"
 
+  bottle do
+    root_url "https://github.com/ziyong-was-taken/homebrew-tap/releases/download/tdf-0.5.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "54718533af7f739ddfffd1ee38a11b1e6e62ee2e7b50ba1cdef6ca9ce0c32f4a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "25ae1ca1eda222c74db495c469cb07e6fafd0f25fcb46b3bc0153b143a674c0e"
+  end
+
   depends_on "llvm" => :build
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
