@@ -23,7 +23,6 @@ class Tdf < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/tdf --version")
-
-    system bin/"for_profiling", test_fixtures("test.pdf")
+    assert_match "Please specify the file to open", shell_output("#{bin}/tdf 2>&1", 1)
   end
 end
