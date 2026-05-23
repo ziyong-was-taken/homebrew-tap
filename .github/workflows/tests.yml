@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - Formula/**'
+      - Formula/**
   pull_request:
 
 jobs:
