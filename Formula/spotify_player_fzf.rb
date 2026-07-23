@@ -7,9 +7,9 @@ class SpotifyPlayerFzf < Formula
   head "https://github.com/aome510/spotify-player.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/ziyong-was-taken/homebrew-tap/releases/download/spotify_player_fzf-0.23.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "7b9c33ffe0b4207ffdd36d41cc51408bfb18a0811c37ac67d0b015ba885183f9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "61b1c1281f4c8bbb5bac086d28c0de2fed577d10b16d9d9fc954f115e5928bf5"
+    root_url "https://github.com/ziyong-was-taken/homebrew-tap/releases/download/spotify_player_fzf-0.24.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "ec7b0eaa6b85719b14ebdc3f453c6b032b586687887d79cd41a7c54bf95ad4f9"
+    sha256 cellar: :any,                 x86_64_linux: "aa1f2237bb8b4ac8ec924ef635e416be8cd574a761efc2f2eda7adaec84a1861"
   end
 
   depends_on "pkgconf" => :build
