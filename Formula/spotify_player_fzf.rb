@@ -25,7 +25,7 @@ class SpotifyPlayerFzf < Formula
 
   def install
     # Ensure that the `openssl` crate picks up the intended library.
-    ENV["OPENSSL_DIR"] = Formula["openssl@3"].opt_prefix
+    ENV["OPENSSL_DIR"] = formula_opt_prefix("openssl@3")
 
     features = ["image", "notify", "fzf"]
     system "cargo", "install", *std_cargo_args(path: "spotify_player", features:)
