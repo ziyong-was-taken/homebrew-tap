@@ -1,8 +1,8 @@
 class SpotifyPlayerFzf < Formula
   desc "Spotify player in the terminal with full feature parity"
   homepage "https://github.com/aome510/spotify-player"
-  url "https://github.com/aome510/spotify-player/archive/refs/tags/v0.23.0.tar.gz"
-  sha256 "19397e2bc685e18a702aab3796f35c69ab1dc6ea093a2623386749b0d1887be3"
+  url "https://github.com/aome510/spotify-player/archive/refs/tags/v0.24.1.tar.gz"
+  sha256 "211da7f76d412708315ccd36b77424bd53bc4ad19813ed69de44451779812f1f"
   license "MIT"
   head "https://github.com/aome510/spotify-player.git", branch: "master"
 
